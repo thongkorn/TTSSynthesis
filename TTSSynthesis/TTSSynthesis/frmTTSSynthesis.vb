@@ -24,7 +24,7 @@ Public Class frmTTSSynthesis
 
     ' / --------------------------------------------------------------------------------
     ' / START HERE ...
-    Private Sub frmTextToSpeechLib_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Private Sub frmTTSSynthesis_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Me.Text = "Text To Speech Synthesis"
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
         txtMessage.Text = "I have a beautiful bedroom. There is a bed in my room. I love my room because I can do everything I want in the room. I have a cupboard in my room where I keep my clothes. My room is decorated with many stickers. My friends love playing in my room. I love my bedroom so much."
@@ -186,7 +186,7 @@ Public Class frmTTSSynthesis
     End Sub
 
     ' / --------------------------------------------------------------------------------
-    Private Sub frmTextToSpeechLib_FormClosed(sender As Object, e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
+    Private Sub frmTTSSynthesis_FormClosed(sender As Object, e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
         SpeechSynth.Dispose()
         Me.Dispose()
         GC.SuppressFinalize(Me)
